@@ -159,6 +159,7 @@ console.log(author, title, genres);
 // const primaryGenre = genres[0];
 // const secondaryGenre = genres[1];
 
+//RestSpread Operator
 const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
 
 console.log(primaryGenre, secondaryGenre, otherGenres);
@@ -175,3 +176,9 @@ const updatedBook = {
   pages: 1210,
 };
 updatedBook;
+
+//Template Literals
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and publishes in ${
+  publicationDate.split("-")[0]
+}`;
+summary;
