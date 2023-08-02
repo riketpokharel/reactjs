@@ -233,7 +233,7 @@ function getTotalReivewCount(book) {
 }
 console.log(getTotalReivewCount(book));
 */
-function getTotalReivewCount(book) {
+/*function getTotalReivewCount(book) {
   const goodreads = book.reviews?.goodreads.reviewsCount;
   const librarything = book.reviews?.librarything?.reviewsCount ?? 0;
   librarything;
@@ -299,4 +299,12 @@ booksAfterAdd;
 const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 1210 } : book
 );
-booksAfterAdd;
+booksAfterAdd;*/
+
+//ASYNCHRONOUS JS PROMISES
+
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
+console.log("jonas");
