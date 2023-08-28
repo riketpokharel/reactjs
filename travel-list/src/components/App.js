@@ -4,6 +4,7 @@ import Form from "./Form";
 import PackingList from "./PackingList";
 import Stats from "./Stats";
 
+// Main function
 export default function App() {
   const [items, setItems] = useState([]);
 
